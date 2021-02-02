@@ -18,9 +18,9 @@ function Main(props) {
           setUserAvatar(res.avatar)
         }
       )
-      .catch(err => console.log(err))
+      .catch(err => console.log(err))  
     
-  },[])
+  },[]) 
   // console.log(userName)
   const [cards, setCards] = useState([]);
   useEffect( () => {
