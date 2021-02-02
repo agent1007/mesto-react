@@ -1,5 +1,5 @@
 // import avatarAnalog from '../../images/AvatarAnalog.jpg'
-import api from '../../utils/Api';
+import api from '../../utils/api';
 import Card from '../Card/Card';
 import { useState } from 'react';
 import { useEffect } from 'react';

@@ -10,7 +10,7 @@ function Card(props) {
     
     return (
         <div className="element">
-            <img className="element__image" src={props.src} alt="Рисунок" onClick={handleClick}/>
+            <img className="element__image" src={props.src} alt={props.name} onClick={handleClick}/>
             <div className="element__row">
               <h2 className="element__title" >{props.name}</h2>
               <div className="element__buttons">

@@ -57,8 +57,11 @@ function App() {
     <PopupWithForm 
       name='edit' 
       title='Редактировать профиль' 
-      children={
-        <>
+      
+      isOpen={isEditProfilePopupOpen}
+      onClose={closeAllPopups}
+    > 
+      <>
         <input 
           type="text" 
           required 
@@ -93,14 +96,13 @@ function App() {
           className="popup__submit-button">Сохранить
         </button>
         </>
-      }
-      isOpen={isEditProfilePopupOpen}
-      onClose={closeAllPopups}
-    />
+      </PopupWithForm>
     <PopupWithForm 
       name='add-card' 
       title='Новое место' 
-      children={
+      isOpen={isAddPlacePopupOpen}
+      onClose={closeAllPopups}
+    >
       <> 
         <input 
           type="text" 
@@ -133,26 +135,24 @@ function App() {
           className="popup__submit-button popup__submit-button_add-card">Создать
         </button>
       </>
-      }
-      isOpen={isAddPlacePopupOpen}
-      onClose={closeAllPopups}
-    />
+      </PopupWithForm>
     <PopupWithForm 
       name='confirm' 
       title='Вы уверены?'
-      children={
+    >
       <>
         <button 
           type="submit" 
           className="popup__submit-button">Да
         </button>
       </>
-      }
-    />
+      </PopupWithForm>
     <PopupWithForm 
       name='avatar' 
       title='Обновить аватар'
-      children={
+      isOpen={isEditAvatarPopupOpen}
+      onClose={closeAllPopups}
+    >
       <>
         <input 
           type="url" 
@@ -171,10 +171,7 @@ function App() {
           className="popup__submit-button popup__submit-button_add-card">Сохранить
         </button>
       </>
-      }
-      isOpen={isEditAvatarPopupOpen}
-      onClose={closeAllPopups}
-    />
+    </PopupWithForm>
     <ImagePopup 
       card={selectedCard}
       onClose={closeAllPopups}/>
