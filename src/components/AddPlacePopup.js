@@ -1,6 +1,6 @@
-import PopupWithForm from '../PopupWithForm/PopupWithForm';
+import PopupWithForm from './PopupWithForm';
 import { useState, useContext } from 'react';
-import { CurrentUserContext } from '../../contexts/CurrentUserContext';
+import { CurrentUserContext } from '../contexts/CurrentUserContext';
 
 function AddPlacePopup(props) {
   const currentUser = useContext(CurrentUserContext);
