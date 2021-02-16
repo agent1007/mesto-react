@@ -84,7 +84,7 @@ class Api {
           },
           body: JSON.stringify({
             name: data.name,
-            about: data.job 
+            about: data.about 
           })
         })
         .then((res) => this._requestResult(res))
@@ -98,7 +98,7 @@ class Api {
               'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            avatar: data.link
+            avatar: data.avatar
           })
         })
         .then((res) => this._requestResult(res))
