@@ -1,27 +1,20 @@
 import PopupWithForm from './PopupWithForm';
-import { useState, useContext } from 'react';
-import { CurrentUserContext } from '../contexts/CurrentUserContext';
+import { useRef } from 'react';
 
 function AddPlacePopup(props) {
-  const currentUser = useContext(CurrentUserContext);
-  const [name, setName ] = useState(currentUser.name);
-  const [link, setLink] = useState(currentUser.link);
 
-  function handleChangeName(e) {
-    setName(e.target.value);
-  }
-
-  function handleChangeDescription(e) {
-    setLink(e.target.value);
-  }
-
+  const nameRef = useRef();
+  const linkRef = useRef();
   
   function handleSubmit(e) {
     e.preventDefault();
     props.onAddPlace({
-      name,
-      link
+      
+      name: nameRef.current.value,
+      link: linkRef.current.value
     });
+    nameRef.current.value = '';
+    linkRef.current.value = '';
   } 
 
 
@@ -43,8 +36,8 @@ function AddPlacePopup(props) {
                 placeholder="Название" 
                 name="name" 
                 id="info-title-add-card" 
-                value={name || ''}
-                onChange={handleChangeName} 
+                ref={nameRef}
+                
               />
               <span 
                 id="info-title-add-card-error" 
@@ -57,8 +50,8 @@ function AddPlacePopup(props) {
                 placeholder="Ссылка на картинку" 
                 name="link" 
                 id="info-subtitle-add-card" 
-                value={link || ''}
-                onChange={handleChangeDescription} 
+                ref={linkRef}
+                
               />
               <span 
                 id="info-subtitle-add-card-error" 

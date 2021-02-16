@@ -142,7 +142,6 @@ function App() {
 
         </div>
       </div>  
-      <template className="template-element" id="element" />
       </CurrentUserContext.Provider>
     </div>
   );
