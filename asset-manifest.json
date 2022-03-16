@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/namerepository/static/css/main.8b41ebb7.chunk.css",
-    "main.js": "/namerepository/static/js/main.41532966.chunk.js",
-    "main.js.map": "/namerepository/static/js/main.41532966.chunk.js.map",
-    "runtime-main.js": "/namerepository/static/js/runtime-main.54fcaf8c.js",
-    "runtime-main.js.map": "/namerepository/static/js/runtime-main.54fcaf8c.js.map",
-    "static/js/2.c1b84663.chunk.js": "/namerepository/static/js/2.c1b84663.chunk.js",
-    "static/js/2.c1b84663.chunk.js.map": "/namerepository/static/js/2.c1b84663.chunk.js.map",
-    "static/js/3.f6758bae.chunk.js": "/namerepository/static/js/3.f6758bae.chunk.js",
-    "static/js/3.f6758bae.chunk.js.map": "/namerepository/static/js/3.f6758bae.chunk.js.map",
-    "index.html": "/namerepository/index.html",
-    "static/css/main.8b41ebb7.chunk.css.map": "/namerepository/static/css/main.8b41ebb7.chunk.css.map",
-    "static/js/2.c1b84663.chunk.js.LICENSE.txt": "/namerepository/static/js/2.c1b84663.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/namerepository/static/media/vectorDelete.a274c87c.svg",
-    "static/media/logo.03b78ada.svg": "/namerepository/static/media/logo.03b78ada.svg"
+    "main.css": "/mesto-react/static/css/main.0b2c1f44.chunk.css",
+    "main.js": "/mesto-react/static/js/main.41532966.chunk.js",
+    "main.js.map": "/mesto-react/static/js/main.41532966.chunk.js.map",
+    "runtime-main.js": "/mesto-react/static/js/runtime-main.90dfed8f.js",
+    "runtime-main.js.map": "/mesto-react/static/js/runtime-main.90dfed8f.js.map",
+    "static/js/2.c1b84663.chunk.js": "/mesto-react/static/js/2.c1b84663.chunk.js",
+    "static/js/2.c1b84663.chunk.js.map": "/mesto-react/static/js/2.c1b84663.chunk.js.map",
+    "static/js/3.f6758bae.chunk.js": "/mesto-react/static/js/3.f6758bae.chunk.js",
+    "static/js/3.f6758bae.chunk.js.map": "/mesto-react/static/js/3.f6758bae.chunk.js.map",
+    "index.html": "/mesto-react/index.html",
+    "static/css/main.0b2c1f44.chunk.css.map": "/mesto-react/static/css/main.0b2c1f44.chunk.css.map",
+    "static/js/2.c1b84663.chunk.js.LICENSE.txt": "/mesto-react/static/js/2.c1b84663.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/mesto-react/static/media/vectorDelete.a274c87c.svg",
+    "static/media/logo.03b78ada.svg": "/mesto-react/static/media/logo.03b78ada.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.54fcaf8c.js",
+    "static/js/runtime-main.90dfed8f.js",
     "static/js/2.c1b84663.chunk.js",
-    "static/css/main.8b41ebb7.chunk.css",
+    "static/css/main.0b2c1f44.chunk.css",
     "static/js/main.41532966.chunk.js"
   ]
 }
